@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-
-    double x, y, d;
-    cin >> x >> y >> d;
-
-    long long ans = (long long)((y - x) / d) - 1;
-    if (ans < 0) ans = 0; 
-    cout << ans << "\n";
-
-    return 0;
+int n;
+cin>>n;
+int a1=n%10;
+int a2=n/10;
+if (a2>=a1)
+    cout<<n*(a2+1);
+else
+ cout<<-1;
+return 0;
 }
